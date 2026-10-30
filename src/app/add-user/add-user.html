@@ -1,0 +1,27 @@
+<p>add-user works!</p>
+<form (ngSubmit)="OnAddUser()"  class="form-group"  >
+
+    <label> Name </label>
+    <div>
+    <input type="text" class="form-control" placeholder="Name" [(ngModel)]="User.Name"  name="Name"/>
+    </div>
+    
+    <label> Surname </label>
+    <div>    
+
+     <input type="text" class="form-control" placeholder="Surname" [(ngModel)]="User.Surname" name="Surname"/>
+    </div>
+    
+    <label> Email </label>
+    <div>  
+     <input type="email" class="form-control" placeholder="Email" [(ngModel)]="User.Email"  name="Email"/>
+    </div>
+    
+    <label> Password </label>
+    <div>
+   <input type="password" class="form-control" placeholder="Password" [(ngModel)]="User.Password" name="Password" />
+
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Add User</button>
+</form>
